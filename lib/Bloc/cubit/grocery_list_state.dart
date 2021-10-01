@@ -25,8 +25,6 @@ class GroceryListStateAdded extends GroceryListState {
   int get hashCode => items.hashCode;
 }
 
-class GroceryListStateAddRowPage extends GroceryListState {}
-
 class GroceryListStateItemDescription extends GroceryListState {
   final RowItem item;
   const GroceryListStateItemDescription(this.item);

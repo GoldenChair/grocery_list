@@ -38,9 +38,6 @@ class MyHomePage extends StatelessWidget {
                   if (state is GroceryListStateInitial) {
                     return HomeWidget(state.emptyItemsList);
                   }
-                  if (state is GroceryListStateAddRowPage) {
-                    return AddRowPageWidget();
-                  }
                   if (state is GroceryListStateAdded) {
                     return HomeWidget(state.items);
                   }

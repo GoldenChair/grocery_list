@@ -19,10 +19,6 @@ class GroceryListCubit extends Cubit<GroceryListState> {
     emit(GroceryListStateAdded(items));
   }
 
-  void addpage() {
-    emit(GroceryListStateAddRowPage());
-  }
-
   void checkItem(RowItem item) async {
     // flip value of isDone to 1 if 0 and to 0 if 1
     int checkval = (item.isDone == 0) ? 1 : 0;
